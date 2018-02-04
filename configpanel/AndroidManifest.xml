@@ -69,6 +69,8 @@
                 <action android:name="android.intent.action.SCREEN_CAMERA_GESTURE" />
             </intent-filter>
         </receiver>
+
+        <activity android:name=".KeyHandler" />
     </application>
 
 </manifest>
