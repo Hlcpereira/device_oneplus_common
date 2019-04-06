@@ -22,7 +22,7 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceActivity;
 import android.preference.ListPreference;
 import android.preference.SwitchPreference;
-import android.preference.PreferenceGroup
+import android.preference.PreferenceGroup;
 import android.text.TextUtils;
 import android.view.MenuItem;
 
