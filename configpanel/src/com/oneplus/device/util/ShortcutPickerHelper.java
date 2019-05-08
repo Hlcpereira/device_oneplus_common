@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.slim.device.util;
+package com.oneplus.device.util;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -28,9 +28,8 @@ import android.os.Bundle;
 import android.os.Parcelable;
 import android.util.Log;
 
-import com.slim.device.R;
-
-import com.android.internal.util.gzosp.AppHelper;
+import com.oneplus.device.R;
+import com.oneplus.device.util.AppHelper;
 
 import java.util.ArrayList;
 

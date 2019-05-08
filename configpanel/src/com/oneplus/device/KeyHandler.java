@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.slim.device;
+package com.oneplus.device;
 
 import android.app.Activity;
 import android.app.NotificationManager;
@@ -37,12 +37,12 @@ import android.view.KeyEvent;
 
 import android.service.notification.ZenModeConfig;
 
-import com.slim.device.settings.ScreenOffGesture;
+import com.oneplus.device.settings.ScreenOffGesture;
+import com.oneplus.device.util.ActionConstants;
+import com.oneplus.device.util.Action;
 
 import com.android.internal.os.DeviceKeyHandler;
 import com.android.internal.util.ArrayUtils;
-import com.android.internal.util.gzosp.ActionConstants;
-import com.android.internal.util.gzosp.Action;
 
 public class KeyHandler implements DeviceKeyHandler {
 
@@ -109,7 +109,7 @@ public class KeyHandler implements DeviceKeyHandler {
 
         try {
             mGestureContext = mContext.createPackageContext(
-                    "com.slim.device", Context.CONTEXT_IGNORE_SECURITY);
+                    "com.oneplus.device", Context.CONTEXT_IGNORE_SECURITY);
         } catch (NameNotFoundException e) {
         }
     }
@@ -216,9 +216,9 @@ public class KeyHandler implements DeviceKeyHandler {
                 Context.MODE_PRIVATE | Context.MODE_MULTI_PROCESS);
     }
 
-    public boolean handleKeyEvent(KeyEvent event) {
+    public KeyEvent handleKeyEvent(KeyEvent event) {
         if (event.getAction() != KeyEvent.ACTION_UP) {
-            return false;
+            return event;
         }
         int scanCode = event.getScanCode();
         boolean isKeySupported = ArrayUtils.contains(sSupportedGestures, scanCode);

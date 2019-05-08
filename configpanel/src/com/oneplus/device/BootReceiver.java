@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.slim.device;
+package com.oneplus.device;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
@@ -24,10 +24,10 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.preference.PreferenceManager;
 
-import com.slim.device.KernelControl;
-import com.slim.device.settings.ScreenOffGesture;
-import com.slim.device.settings.SliderSettings;
-import com.slim.device.util.FileUtils;
+import com.oneplus.device.KernelControl;
+import com.oneplus.device.settings.ScreenOffGesture;
+import com.oneplus.device.settings.SliderSettings;
+import com.oneplus.device.util.FileUtils;
 
 import java.io.File;
 

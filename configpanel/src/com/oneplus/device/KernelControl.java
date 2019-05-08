@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.slim.device;
+package com.oneplus.device;
 
-import com.slim.device.util.FileUtils;
+import com.oneplus.device.util.FileUtils;
 
 import java.io.File;
 

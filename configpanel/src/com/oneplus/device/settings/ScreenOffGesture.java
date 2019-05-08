@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.slim.device.settings;
+package com.oneplus.device.settings;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -37,14 +37,13 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import com.android.internal.util.gzosp.AppHelper;
-import com.android.internal.util.gzosp.ActionConstants;
-import com.android.internal.util.gzosp.DeviceUtils;
-import com.android.internal.util.gzosp.DeviceUtils.FilteredDeviceFeaturesArray;
-
-import com.slim.device.KernelControl;
-import com.slim.device.R;
-import com.slim.device.util.ShortcutPickerHelper;
+import com.oneplus.device.util.AppHelper;
+import com.oneplus.device.util.ActionConstants;
+import com.oneplus.device.util.DeviceUtils;
+import com.oneplus.device.util.DeviceUtils.FilteredDeviceFeaturesArray;
+import com.oneplus.device.util.ShortcutPickerHelper;
+import com.oneplus.device.KernelControl;
+import com.oneplus.device.R;
 
 public class ScreenOffGesture extends PreferenceFragment implements
         OnPreferenceChangeListener, OnPreferenceClickListener,

@@ -19,12 +19,12 @@ include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
 LOCAL_CERTIFICATE := platform
-LOCAL_PACKAGE_NAME := DeviceHandler
+LOCAL_PACKAGE_NAME := ConfigPanel
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_PRIVATE_PLATFORM_APIS := true
 
 LOCAL_RESOURCE_DIR := \
-    $(LOCAL_PATH)/res \
-    $(LOCAL_PATH)/../../../../packages/resources/OneplusGestures/res
+    $(LOCAL_PATH)/res
+#    $(LOCAL_PATH)/../../../../packages/resources/OneplusGestures/res
 
 include $(BUILD_PACKAGE)

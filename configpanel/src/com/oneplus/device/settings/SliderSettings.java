@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.slim.device.settings;
+package com.oneplus.device.settings;
 
 import android.os.Bundle;
 import android.preference.ListPreference;
@@ -23,9 +23,9 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceActivity;
 import android.preference.SwitchPreference;
 
-import com.slim.device.KernelControl;
-import com.slim.device.R;
-import com.slim.device.util.FileUtils;
+import com.oneplus.device.KernelControl;
+import com.oneplus.device.R;
+import com.oneplus.device.util.FileUtils;
 
 public class SliderSettings extends PreferenceActivity
         implements OnPreferenceChangeListener {
