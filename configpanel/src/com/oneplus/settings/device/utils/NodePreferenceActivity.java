@@ -17,14 +17,14 @@
 package com.oneplus.settings.device.utils;
 
 import android.os.Bundle;
-import android.preference.Preference;
-import android.preference.Preference.OnPreferenceChangeListener;
-import android.preference.PreferenceActivity;
-import android.preference.ListPreference;
-import android.preference.SwitchPreference;
-import android.preference.PreferenceGroup;
 import android.text.TextUtils;
 import android.view.MenuItem;
+
+import androidx.preference.ListPreference;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceFragment;
+import androidx.preference.PreferenceGroup;
+import androidx.preference.SwitchPreference;
 
 import java.io.File;
 

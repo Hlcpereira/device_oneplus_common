@@ -22,11 +22,12 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.preference.Preference;
-import android.preference.SwitchPreference;
 import android.widget.ListView;
 
-public class TouchscreenGestureSettings extends NodePreferenceActivity {
+import androidx.preference.Preference;
+import androidx.preference.SwitchPreference;
+
+public class ConfigPanelSettings extends NodePreferenceActivity {
     private static final String KEY_HAPTIC_FEEDBACK = "touchscreen_gesture_haptic_feedback";
 
     private SwitchPreference mHapticFeedback;
@@ -34,7 +35,7 @@ public class TouchscreenGestureSettings extends NodePreferenceActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.touchscreen_panel);
+        addPreferencesFromResource(R.xml.configpanel_panel);
 
         ListView lv = getListView();
         lv.setDivider(new ColorDrawable(Color.TRANSPARENT));

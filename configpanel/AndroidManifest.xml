@@ -46,7 +46,7 @@
         </provider>
 
         <activity
-            android:name=".TouchscreenGestureSettings"
+            android:name=".ConfigPanelSettings"
             android:label="@string/advanced_settings">
             <intent-filter>
                 <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
